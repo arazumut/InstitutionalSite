@@ -2,180 +2,360 @@
 
 {% block content %}
     <!-- Hero Section -->
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-                    <h1 class="display-4 fw-bold">Modern Çözümlerle İşinizi Büyütün</h1>
-                    <h2 class="my-3">Profesyonel ekibimiz ile işinizi dijital dünyada en üst seviyeye taşıyoruz</h2>
-                    <div class="d-flex">
-                        <a href="{% url 'contact' %}" class="btn btn-primary rounded-pill px-4 py-2 me-3">İletişime Geçin</a>
-                        <a href="{% url 'services' %}" class="btn btn-outline-primary rounded-pill px-4 py-2">Hizmetlerimiz</a>
+    <section id="hero" class="d-flex align-items-center position-relative overflow-hidden">
+        <div class="container position-relative">
+            <div class="row gy-5 align-items-center">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                    <span class="badge bg-primary text-white px-3 py-2 mb-3 rounded-pill fw-normal">Kurumsal Çözümler</span>
+                    <h1 class="display-3 fw-bold text-gradient">Dijital Geleceğinizi <br>Birlikte İnşa Edelim</h1>
+                    <h2 class="my-4 text-secondary">Profesyonel ekibimiz ile markanızı dijital dünyada zirveye taşıyoruz</h2>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="{% url 'contact' %}" class="btn btn-primary btn-lg rounded-pill px-4 py-3 shadow-sm">İletişime Geçin <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="{% url 'services' %}" class="btn btn-outline-dark btn-lg rounded-pill px-4 py-3">Hizmetlerimiz</a>
+                    </div>
+                    <div class="mt-5 d-flex align-items-center gap-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success fs-4 me-2"></i>
+                            <span class="fw-bold">250+ Proje</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success fs-4 me-2"></i>
+                            <span class="fw-bold">10+ Yıl Deneyim</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Hero Image">
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-4 shadow-lg" alt="Hero Image">
+                        <div class="hero-shape bg-primary position-absolute rounded-circle"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="hero-wave position-absolute bottom-0 w-100"></div>
     </section>
     
-    <!-- About Section -->
-    <section id="about" class="about py-5">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title text-center mb-5">
-                <h2 class="display-6 fw-bold">Hakkımızda</h2>
-                <p class="text-muted">Bizi yakından tanıyın</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="About Image">
+    <!-- Partners Section -->
+    <section class="partners py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center mb-4">
+                    <p class="text-muted mb-0">Güvenilir İş Ortaklarımız</p>
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-                    <h3 class="fw-bold mb-3">10 Yılı Aşkın Deneyim</h3>
-                    <p class="mb-4">
-                        Kurumsal Site olarak, 2013 yılında başladığımız yolculuğumuzda, müşterilerimize dijital dünyada en iyi hizmeti sunmak için çalışıyoruz. Türkiye'nin önde gelen kurumsal çözümler şirketi olarak, her sektörden firmalara özel çözümler üretiyoruz.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="d-flex mb-3">
-                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
-                                <div>
-                                    <h5 class="fw-bold">Uzman Kadro</h5>
-                                    <p>Alanında uzman ekibimizle kaliteli hizmet</p>
-                                </div>
-                            </div>
+                <div class="col-md-10">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-4 col-md-2 p-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple" class="img-fluid partner-logo">
                         </div>
-                        <div class="col-md-6">
-                            <div class="d-flex mb-3">
-                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
-                                <div>
-                                    <h5 class="fw-bold">Modern Teknolojiler</h5>
-                                    <p>En güncel teknolojilerle geliştirme</p>
-                                </div>
-                            </div>
+                        <div class="col-4 col-md-2 p-3 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img src="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/gnb-desktop-120x32.png" alt="Samsung" class="img-fluid partner-logo">
                         </div>
-                        <div class="col-md-6">
-                            <div class="d-flex mb-3">
-                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
-                                <div>
-                                    <h5 class="fw-bold">7/24 Destek</h5>
-                                    <p>Her an yanınızda teknik destek</p>
-                                </div>
-                            </div>
+                        <div class="col-4 col-md-2 p-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/logo/huawei/huawei-logo.png" alt="Huawei" class="img-fluid partner-logo">
                         </div>
-                        <div class="col-md-6">
-                            <div class="d-flex mb-3">
-                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
-                                <div>
-                                    <h5 class="fw-bold">Uygun Fiyat</h5>
-                                    <p>Rekabetçi ve erişilebilir fiyatlar</p>
-                                </div>
-                            </div>
+                        <div class="col-4 col-md-2 p-3 text-center" data-aos="fade-up" data-aos-delay="400">
+                            <img src="https://www.hihonor.com/content/dam/honor/global/logo/honor-logo-black-2022.svg" alt="Honor" class="img-fluid partner-logo">
+                        </div>
+                        <div class="col-4 col-md-2 p-3 text-center" data-aos="fade-up" data-aos-delay="500">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="Amazon" class="img-fluid partner-logo">
                         </div>
                     </div>
-                    <a href="{% url 'about' %}" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Devamını Oku</a>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- Services Section -->
-    <section id="services" class="services py-5 bg-light">
+    <section id="services" class="services py-7 bg-white">
         <div class="container" data-aos="fade-up">
-            <div class="section-title text-center mb-5">
-                <h2 class="display-6 fw-bold">Hizmetlerimiz</h2>
-                <p class="text-muted">İşinizi büyütmeniz için sunduğumuz çözümler</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center mb-5">
+                    <span class="badge bg-primary text-white px-3 py-2 mb-3 rounded-pill fw-normal">Hizmetlerimiz</span>
+                    <h2 class="display-5 fw-bold mb-3">Neler Sunuyoruz?</h2>
+                    <p class="text-muted lead">İşinizi büyütmeniz için sunduğumuz profesyonel çözümlerle yanınızdayız</p>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box mb-3">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 service-card">
+                        <div class="card-body p-5">
+                            <div class="service-icon bg-light rounded-circle mb-4 d-flex align-items-center justify-content-center">
                                 <i class="fas fa-laptop-code text-primary fs-1"></i>
                             </div>
                             <h4 class="fw-bold mb-3">Web Tasarım</h4>
-                            <p>Modern, kullanıcı dostu ve responsive web tasarımları ile markanızı dijitalde en iyi şekilde temsil ediyoruz.</p>
+                            <p class="mb-4">Modern, kullanıcı dostu ve responsive web tasarımları ile markanızı dijitalde en iyi şekilde temsil ediyoruz.</p>
+                            <a href="{% url 'services' %}" class="text-primary fw-bold text-decoration-none">Detaylı Bilgi <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box mb-3">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 service-card">
+                        <div class="card-body p-5">
+                            <div class="service-icon bg-light rounded-circle mb-4 d-flex align-items-center justify-content-center">
                                 <i class="fas fa-mobile-alt text-primary fs-1"></i>
                             </div>
                             <h4 class="fw-bold mb-3">Mobil Uygulama</h4>
-                            <p>iOS ve Android platformları için yüksek performanslı ve kullanıcı odaklı mobil uygulamalar geliştiriyoruz.</p>
+                            <p class="mb-4">iOS ve Android platformları için yüksek performanslı ve kullanıcı odaklı mobil uygulamalar geliştiriyoruz.</p>
+                            <a href="{% url 'services' %}" class="text-primary fw-bold text-decoration-none">Detaylı Bilgi <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box mb-3">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 service-card">
+                        <div class="card-body p-5">
+                            <div class="service-icon bg-light rounded-circle mb-4 d-flex align-items-center justify-content-center">
                                 <i class="fas fa-search text-primary fs-1"></i>
                             </div>
                             <h4 class="fw-bold mb-3">SEO Optimizasyonu</h4>
-                            <p>Arama motorlarında üst sıralarda yer almanız için kapsamlı ve etkili SEO çalışmaları yapıyoruz.</p>
+                            <p class="mb-4">Arama motorlarında üst sıralarda yer almanız için kapsamlı ve etkili SEO çalışmaları yapıyoruz.</p>
+                            <a href="{% url 'services' %}" class="text-primary fw-bold text-decoration-none">Detaylı Bilgi <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="{% url 'services' %}" class="btn btn-primary rounded-pill px-4 py-2">Tüm Hizmetleri Gör</a>
+            <div class="text-center mt-5">
+                <a href="{% url 'services' %}" class="btn btn-primary btn-lg rounded-pill px-4 py-3 shadow-sm">Tüm Hizmetleri Keşfedin <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about py-7 bg-light position-relative">
+        <div class="container" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-4 shadow-lg" alt="About Image">
+                        <div class="experience-badge position-absolute bg-primary text-white p-4 rounded-4 shadow-lg">
+                            <h3 class="fw-bold display-4 mb-0">10+</h3>
+                            <p class="mb-0">Yıllık Deneyim</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <span class="badge bg-primary text-white px-3 py-2 mb-3 rounded-pill fw-normal">Hakkımızda</span>
+                    <h2 class="display-5 fw-bold mb-4">Neden Biz?</h2>
+                    <p class="lead mb-4">
+                        Kurumsal Site olarak, 2013 yılında başladığımız yolculuğumuzda, müşterilerimize dijital dünyada en iyi hizmeti sunmak için çalışıyoruz.
+                    </p>
+                    <p class="mb-4">
+                        Türkiye'nin önde gelen kurumsal çözümler şirketi olarak, her sektörden firmalara özel çözümler üretiyoruz.
+                    </p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="d-flex feature-item">
+                                <div class="feature-icon bg-light rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-users text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Uzman Kadro</h5>
+                                    <p class="mb-0">Alanında uzman ekibimizle kaliteli hizmet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex feature-item">
+                                <div class="feature-icon bg-light rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-code text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Modern Teknolojiler</h5>
+                                    <p class="mb-0">En güncel teknolojilerle geliştirme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex feature-item">
+                                <div class="feature-icon bg-light rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-headset text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">7/24 Destek</h5>
+                                    <p class="mb-0">Her an yanınızda teknik destek</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex feature-item">
+                                <div class="feature-icon bg-light rounded-circle me-3 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-tags text-primary"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Uygun Fiyat</h5>
+                                    <p class="mb-0">Rekabetçi ve erişilebilir fiyatlar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <a href="{% url 'about' %}" class="btn btn-primary btn-lg rounded-pill px-4 py-3 shadow-sm">Daha Fazla Bilgi <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Counter Section -->
+    <section class="counter-section py-5 bg-primary text-white position-relative">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="counter-item">
+                        <h2 class="counter display-4 fw-bold">250</h2>
+                        <p class="mb-0 fw-light">Tamamlanan Proje</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="counter-item">
+                        <h2 class="counter display-4 fw-bold">120</h2>
+                        <p class="mb-0 fw-light">Mutlu Müşteri</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="counter-item">
+                        <h2 class="counter display-4 fw-bold">15</h2>
+                        <p class="mb-0 fw-light">Uzman Çalışan</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="counter-item">
+                        <h2 class="counter display-4 fw-bold">10</h2>
+                        <p class="mb-0 fw-light">Yıllık Deneyim</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio py-5">
+    <section id="portfolio" class="portfolio py-7">
         <div class="container" data-aos="fade-up">
-            <div class="section-title text-center mb-5">
-                <h2 class="display-6 fw-bold">Portfolyo</h2>
-                <p class="text-muted">Başarıyla tamamladığımız projelerden bazıları</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center mb-5">
+                    <span class="badge bg-primary text-white px-3 py-2 mb-3 rounded-pill fw-normal">Portfolyo</span>
+                    <h2 class="display-5 fw-bold mb-3">Son Projelerimiz</h2>
+                    <p class="text-muted lead">Başarıyla tamamladığımız en iyi çalışmalarımız</p>
+                </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card overflow-hidden shadow-sm border-0">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Portfolio">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">E-Ticaret Sitesi</h5>
-                            <p class="card-text text-muted">Web Tasarım, E-Ticaret</p>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Portfolio">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-info text-center p-4">
+                                <h4 class="text-white fw-bold mb-2">E-Ticaret Sitesi</h4>
+                                <p class="text-white-50 mb-3">Web Tasarım, E-Ticaret</p>
+                                <a href="{% url 'portfolio' %}" class="btn btn-outline-light btn-sm rounded-pill px-3">Detaylar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card overflow-hidden shadow-sm border-0">
-                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Portfolio">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Mobil Bankacılık Uygulaması</h5>
-                            <p class="card-text text-muted">Mobil Uygulama, Finans</p>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Portfolio">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-info text-center p-4">
+                                <h4 class="text-white fw-bold mb-2">Mobil Bankacılık Uygulaması</h4>
+                                <p class="text-white-50 mb-3">Mobil Uygulama, Finans</p>
+                                <a href="{% url 'portfolio' %}" class="btn btn-outline-light btn-sm rounded-pill px-3">Detaylar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="card overflow-hidden shadow-sm border-0">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Portfolio">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Kurumsal Kimlik Tasarımı</h5>
-                            <p class="card-text text-muted">Grafik Tasarım, Markalaşma</p>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Portfolio">
+                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                            <div class="portfolio-info text-center p-4">
+                                <h4 class="text-white fw-bold mb-2">Kurumsal Kimlik Tasarımı</h4>
+                                <p class="text-white-50 mb-3">Grafik Tasarım, Markalaşma</p>
+                                <a href="{% url 'portfolio' %}" class="btn btn-outline-light btn-sm rounded-pill px-3">Detaylar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="{% url 'portfolio' %}" class="btn btn-primary rounded-pill px-4 py-2">Tüm Projeleri Gör</a>
+            <div class="text-center mt-5">
+                <a href="{% url 'portfolio' %}" class="btn btn-primary btn-lg rounded-pill px-4 py-3 shadow-sm">Tüm Projeleri Keşfedin <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <section class="testimonial py-7 bg-light">
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center mb-5">
+                    <span class="badge bg-primary text-white px-3 py-2 mb-3 rounded-pill fw-normal">Müşteri Yorumları</span>
+                    <h2 class="display-5 fw-bold mb-3">Müşterilerimiz Ne Diyor?</h2>
+                    <p class="text-muted lead">Bizimle çalışan firmaların görüşleri</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-item bg-white p-5 rounded-4 shadow-sm position-relative">
+                        <div class="testimonial-icon position-absolute">
+                            <i class="fas fa-quote-right text-primary fs-1 opacity-25"></i>
+                        </div>
+                        <p class="mb-4">Profesyonel ekip, zamanında teslim ve kaliteli iş. İşimizi büyütmemize büyük katkı sağladılar.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle me-3" alt="Client" width="60">
+                            <div>
+                                <h5 class="fw-bold mb-0">Ahmet Yılmaz</h5>
+                                <p class="text-muted mb-0">ABC Şirketi, CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-item bg-white p-5 rounded-4 shadow-sm position-relative">
+                        <div class="testimonial-icon position-absolute">
+                            <i class="fas fa-quote-right text-primary fs-1 opacity-25"></i>
+                        </div>
+                        <p class="mb-4">Web sitemizin yenilenmesi ve SEO çalışmaları sonrası satışlarımız %40 arttı. Teşekkürler!</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle me-3" alt="Client" width="60">
+                            <div>
+                                <h5 class="fw-bold mb-0">Ayşe Kaya</h5>
+                                <p class="text-muted mb-0">XYZ Mağazaları, Pazarlama Müdürü</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-item bg-white p-5 rounded-4 shadow-sm position-relative">
+                        <div class="testimonial-icon position-absolute">
+                            <i class="fas fa-quote-right text-primary fs-1 opacity-25"></i>
+                        </div>
+                        <p class="mb-4">Mobil uygulamamızı geliştiren ekibe teşekkürler. Kullanıcı geri bildirimleri harika!</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle me-3" alt="Client" width="60">
+                            <div>
+                                <h5 class="fw-bold mb-0">Mehmet Demir</h5>
+                                <p class="text-muted mb-0">Tekno A.Ş., CTO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Call to Action Section -->
-    <section id="cta" class="cta py-5 bg-primary text-white">
-        <div class="container text-center" data-aos="zoom-in">
-            <h3 class="display-6 fw-bold">Projeleriniz İçin Bize Ulaşın</h3>
-            <p class="mb-4">Hayalinizdeki projeyi gerçeğe dönüştürmek için profesyonel ekibimiz yanınızda.</p>
-            <a href="{% url 'contact' %}" class="btn btn-light rounded-pill px-4 py-2">İletişime Geçin</a>
+    <section id="cta" class="cta py-6 bg-gradient-primary text-white position-relative overflow-hidden">
+        <div class="container position-relative" data-aos="zoom-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold mb-4">Projeleriniz İçin Bize Ulaşın</h2>
+                    <p class="lead mb-5">Hayalinizdeki projeyi gerçeğe dönüştürmek için profesyonel ekibimiz yanınızda. Hemen iletişime geçin!</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="{% url 'contact' %}" class="btn btn-light btn-lg rounded-pill px-5 py-3 shadow">İletişime Geçin <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="tel:+905550001122" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3"><i class="fas fa-phone-alt me-2"></i> 0555 000 11 22</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="cta-shape-1 position-absolute"></div>
+        <div class="cta-shape-2 position-absolute"></div>
     </section>
 {% endblock %} 

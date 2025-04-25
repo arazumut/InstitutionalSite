@@ -78,6 +78,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Counter animation
+    const counterSection = document.querySelector('.counter-section');
+    const counters = document.querySelectorAll('.counter');
+    
+    if (counterSection && counters.length > 0) {
+        let counted = false;
+        
+        function startCounting() {
+            if (counted) return;
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                let count = 0;
+                const duration = 2000; // 2 seconds
+                const increment = Math.ceil(target / (duration / 20)); // Update every 20ms
+                
+                const timer = setInterval(() => {
+                    count += increment;
+                    if (count >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = count;
+                    }
+                }, 20);
+            });
+            
+            counted = true;
+        }
+        
+        // Check if counter section is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom >= 0
+            );
+        }
+        
+        // Start counting when counter section comes into view
+        window.addEventListener('scroll', function() {
+            if (isInViewport(counterSection)) {
+                startCounting();
+            }
+        });
+        
+        // Check on load as well
+        if (isInViewport(counterSection)) {
+            startCounting();
+        }
+    }
+    
     // Portfolio filtering
     if (document.querySelector('.portfolio-filters')) {
         const portfolioFilters = document.querySelectorAll('.portfolio-filters li');
@@ -102,6 +154,25 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // Testimonial carousel
+    const testimonialItems = document.querySelectorAll('.testimonial-item');
+    if (testimonialItems.length > 3) {
+        // If we have more than 3 testimonials, we could initialize a carousel here
+        // This is just a placeholder for future implementation
+    }
+    
+    // Service cards hover effect
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.classList.add('shadow');
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.classList.remove('shadow');
+        });
+    });
     
     // Contact form validation
     const contactForm = document.getElementById('contactForm');
