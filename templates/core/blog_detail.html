@@ -1,0 +1,366 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">Blog Detay</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'blog' %}">Blog</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog Detay</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Detail Section -->
+    <section class="blog-detail py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <!-- Blog Post Detail -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Blog Post">
+                        <div class="card-body p-4">
+                            <div class="blog-meta mb-3">
+                                <span class="me-3"><i class="far fa-calendar-alt me-1"></i> 15 Haziran 2023</span>
+                                <span class="me-3"><i class="far fa-user me-1"></i> Ahmet Yılmaz</span>
+                                <span><i class="far fa-folder me-1"></i> Web Tasarım</span>
+                            </div>
+                            <h2 class="card-title fw-bold mb-4">Web Tasarımda En Son Trendler</h2>
+                            <div class="blog-content">
+                                <p class="lead">2023 yılında web tasarım dünyasında öne çıkan trendleri ve bu trendlerin nasıl etkili bir şekilde uygulanabileceğini öğrenin.</p>
+                                
+                                <p>Dijital dünya sürekli olarak gelişiyor ve web tasarım trendleri de bu gelişmelere paralel olarak değişim gösteriyor. Kullanıcı deneyiminin ön planda tutulduğu günümüzde, web sitelerinin hem estetik açıdan çekici hem de işlevsel olması büyük önem taşıyor.</p>
+                                
+                                <h3 class="mt-4 mb-3">1. Minimalist Tasarım</h3>
+                                <p>Minimalist tasarım, gereksiz öğeleri ortadan kaldırarak, kullanıcıların dikkatini sitenin asıl mesajına ve içeriğine çekmeyi amaçlar. Beyaz alanların etkili kullanımı, sade renk paletleri ve özenle seçilmiş tipografi, minimalist bir web sitesinin temel öğeleridir.</p>
+                                <p>Bu tasarım yaklaşımı, sadece görsel açıdan çekici olmakla kalmaz, aynı zamanda sayfa yüklenme sürelerini de azaltarak, kullanıcı deneyimini olumlu yönde etkiler.</p>
+                                
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <img src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded" alt="Minimalist Design">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded" alt="Minimalist Design">
+                                    </div>
+                                </div>
+                                
+                                <h3 class="mt-4 mb-3">2. Koyu Mod (Dark Mode)</h3>
+                                <p>Koyu mod, son yıllarda popülerlik kazanan bir tasarım trendi haline geldi. Birçok büyük web sitesi ve uygulama, kullanıcılara koyu mod seçeneği sunuyor. Bu trend, göz yorgunluğunu azaltma, batarya ömrünü uzatma ve ekranda daha yüksek kontrast sağlama gibi avantajlar sunuyor.</p>
+                                <p>Web sitenize koyu mod eklemek, kullanıcı deneyimini iyileştirmenin yanı sıra, sitenizin modern ve güncel görünmesini de sağlar.</p>
+                                
+                                <h3 class="mt-4 mb-3">3. Mikroetkileşimler</h3>
+                                <p>Mikroetkileşimler, kullanıcı bir eylem gerçekleştirdiğinde meydana gelen küçük animasyonlar veya görsel geribildirimlerdir. Bu etkileşimler, kullanıcı deneyimini zenginleştirir ve web sitenize kişilik katar.</p>
+                                <p>Örneğin, bir butona tıklandığında renk değişimi, form alanlarına fokuslandığında beliren ipuçları veya sayfa geçişlerindeki yumuşak animasyonlar, sitenizde kullanabileceğiniz mikroetkileşim örnekleridir.</p>
+                                
+                                <div class="alert alert-primary mt-4 mb-4" role="alert">
+                                    <h4 class="alert-heading fw-bold">İpucu!</h4>
+                                    <p>Mikroetkileşimlerin aşırıya kaçmamasına dikkat edin. Amacınız kullanıcı deneyimini iyileştirmek olmalı, kullanıcıyı rahatsız etmek veya site performansını düşürmek değil.</p>
+                                </div>
+                                
+                                <h3 class="mt-4 mb-3">4. 3D Öğeler ve Derinlik</h3>
+                                <p>3D öğeler ve derinlik hissi veren tasarımlar, web sitenize boyut ve ilgi çekicilik katar. Bu trend, özellikle ürün tanıtımı yapan web siteleri için oldukça etkilidir.</p>
+                                <p>Ancak, 3D öğelerin kullanımında dikkatli olmalısınız. Aşırı kullanım, sayfa yükleme sürelerini uzatabilir ve mobil kullanıcılar için sorun yaratabilir.</p>
+                                
+                                <h3 class="mt-4 mb-3">5. Duyarlı Web Tasarımı (Responsive Design)</h3>
+                                <p>Duyarlı web tasarımı, bir web sitesinin farklı ekran boyutlarına ve cihazlara uyum sağlayabilmesi anlamına gelir. Bu trend, artık bir seçenek değil, bir zorunluluk haline gelmiştir.</p>
+                                <p>Mobil cihazlardan internet kullanımının giderek artması nedeniyle, web sitenizin tüm cihazlarda sorunsuz çalışması büyük önem taşır. Google gibi arama motorları da mobil uyumlu web sitelerine daha yüksek sıralamalar verir.</p>
+                                
+                                <h3 class="mt-4 mb-3">Sonuç</h3>
+                                <p>Web tasarım trendleri sürekli olarak değişim gösterse de, kullanıcı deneyimini ön planda tutmak her zaman önemlidir. Yukarıda bahsettiğimiz trendleri web sitenize uygulamadan önce, hedef kitlenizin ihtiyaçlarını ve beklentilerini göz önünde bulundurmalısınız.</p>
+                                <p>Unutmayın, bir web sitesinin başarısı sadece güncel trendleri takip etmekle değil, bu trendleri hedef kitlenizin ihtiyaçlarına uygun şekilde uygulamakla mümkündür.</p>
+                            </div>
+                            
+                            <!-- Tags -->
+                            <div class="blog-tags mt-4">
+                                <span class="fw-bold me-2">Etiketler:</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill me-2 mb-2">Web Tasarım</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill me-2 mb-2">Trendler</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill me-2 mb-2">UX/UI</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill mb-2">Responsive</a>
+                            </div>
+                            
+                            <!-- Share -->
+                            <div class="blog-share mt-4">
+                                <span class="fw-bold me-2">Paylaş:</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle me-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Author Bio -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="rounded-circle" width="100" height="100" alt="Author">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="fw-bold mb-1">Ahmet Yılmaz</h5>
+                                    <p class="text-muted mb-2">Web Tasarım Uzmanı</p>
+                                    <p>10 yılı aşkın deneyime sahip web tasarımcısı. Modern ve kullanıcı dostu web siteleri tasarlamayı ve güncel web tasarım trendleri hakkında blog yazmayı seviyor.</p>
+                                    <div class="social-links">
+                                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Posts -->
+                    <h4 class="fw-bold mb-4">İlgili Yazılar</h4>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card blog-card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Related Post">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold mb-3"><a href="#" class="text-decoration-none">Kullanıcı Deneyimi (UX) Tasarımının Önemi</a></h5>
+                                    <p class="card-text">Kullanıcı deneyimi tasarımının web sitenizin başarısı üzerindeki etkisini ve UX tasarımını iyileştirmenin yollarını keşfedin.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card blog-card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Related Post">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold mb-3"><a href="#" class="text-decoration-none">SEO Dostu Web Tasarımı Nasıl Yapılır?</a></h5>
+                                    <p class="card-text">Arama motorlarında üst sıralarda yer alabilmeniz için web sitenizde dikkat etmeniz gereken SEO faktörlerini öğrenin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comments -->
+                    <h4 class="fw-bold mb-4">Yorumlar (3)</h4>
+                    <div class="comments">
+                        <!-- Comment 1 -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="rounded-circle" width="60" height="60" alt="Commenter">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div>
+                                                <h6 class="fw-bold mb-0">Elif Yıldız</h6>
+                                                <small class="text-muted">16 Haziran 2023, 10:30</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary rounded-pill">Yanıtla</button>
+                                        </div>
+                                        <p class="mb-0">Çok faydalı bir yazı olmuş, teşekkürler! Özellikle mikroetkileşimler konusundaki ipuçları çok değerli. Web sitemde bu teknikleri uygulamayı deneyeceğim.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Comment 2 -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="rounded-circle" width="60" height="60" alt="Commenter">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div>
+                                                <h6 class="fw-bold mb-0">Burak Demir</h6>
+                                                <small class="text-muted">16 Haziran 2023, 14:45</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary rounded-pill">Yanıtla</button>
+                                        </div>
+                                        <p class="mb-0">3D öğelerin kullanımı konusunda haklısınız, performans sorunları yaratabilir. Bu konuda ne gibi optimizasyon teknikleri önerirsiniz?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Comment 3 with Reply -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="rounded-circle" width="60" height="60" alt="Commenter">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div>
+                                                <h6 class="fw-bold mb-0">Zeynep Kaya</h6>
+                                                <small class="text-muted">17 Haziran 2023, 09:15</small>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-primary rounded-pill">Yanıtla</button>
+                                        </div>
+                                        <p class="mb-3">Duyarlı web tasarımı konusu çok önemli. Günümüzde mobil uyumlu olmayan bir web sitesinin başarılı olma şansı yok denecek kadar az.</p>
+                                        
+                                        <!-- Reply -->
+                                        <div class="d-flex mt-4">
+                                            <div class="flex-shrink-0">
+                                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="rounded-circle" width="50" height="50" alt="Author">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <div>
+                                                        <h6 class="fw-bold mb-0">Ahmet Yılmaz <span class="badge bg-primary">Yazar</span></h6>
+                                                        <small class="text-muted">17 Haziran 2023, 10:20</small>
+                                                    </div>
+                                                </div>
+                                                <p class="mb-0">Kesinlikle katılıyorum Zeynep. Mobil kullanıcıların sayısı her geçen gün artıyor ve web sitelerinin bu gerçeğe adapte olması şart.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comment Form -->
+                    <h4 class="fw-bold mb-4">Yorum Yap</h4>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Adınız Soyadınız</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Adresiniz</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment" class="form-label">Yorumunuz</label>
+                                    <textarea class="form-control" id="comment" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">Yorum Gönder</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Search Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Arama</h5>
+                            <form action="" method="get">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Arama..." aria-label="Arama">
+                                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Kategoriler</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Web Tasarım</span>
+                                        <span class="badge bg-primary rounded-pill">14</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Mobil Uygulama</span>
+                                        <span class="badge bg-primary rounded-pill">8</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>E-Ticaret</span>
+                                        <span class="badge bg-primary rounded-pill">11</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Dijital Pazarlama</span>
+                                        <span class="badge bg-primary rounded-pill">9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Grafik Tasarım</span>
+                                        <span class="badge bg-primary rounded-pill">6</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Posts Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Son Yazılar</h5>
+                            <div class="recent-post">
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="rounded" width="60" height="60" alt="Recent Post">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="fw-bold mb-1"><a href="#" class="text-decoration-none">Dijital Pazarlamada Başarının Sırları</a></h6>
+                                        <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> 28 Mayıs 2023</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="rounded" width="60" height="60" alt="Recent Post">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="fw-bold mb-1"><a href="#" class="text-decoration-none">Mobil Uygulama Geliştirme Süreçleri</a></h6>
+                                        <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> 10 Nisan 2023</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="rounded" width="60" height="60" alt="Recent Post">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="fw-bold mb-1"><a href="#" class="text-decoration-none">E-Ticaret Sitenizi Optimize Etmenin Yolları</a></h6>
+                                        <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> 22 Mart 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags Widget -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Etiketler</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Web Tasarım</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Responsive</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">E-Ticaret</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">SEO</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Mobil</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">UX/UI</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Bootstrap</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">WordPress</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Django</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %} 

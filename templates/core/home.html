@@ -1,0 +1,181 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">Modern Çözümlerle İşinizi Büyütün</h1>
+                    <h2 class="my-3">Profesyonel ekibimiz ile işinizi dijital dünyada en üst seviyeye taşıyoruz</h2>
+                    <div class="d-flex">
+                        <a href="{% url 'contact' %}" class="btn btn-primary rounded-pill px-4 py-2 me-3">İletişime Geçin</a>
+                        <a href="{% url 'services' %}" class="btn btn-outline-primary rounded-pill px-4 py-2">Hizmetlerimiz</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-6 fw-bold">Hakkımızda</h2>
+                <p class="text-muted">Bizi yakından tanıyın</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid" alt="About Image">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                    <h3 class="fw-bold mb-3">10 Yılı Aşkın Deneyim</h3>
+                    <p class="mb-4">
+                        Kurumsal Site olarak, 2013 yılında başladığımız yolculuğumuzda, müşterilerimize dijital dünyada en iyi hizmeti sunmak için çalışıyoruz. Türkiye'nin önde gelen kurumsal çözümler şirketi olarak, her sektörden firmalara özel çözümler üretiyoruz.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
+                                <div>
+                                    <h5 class="fw-bold">Uzman Kadro</h5>
+                                    <p>Alanında uzman ekibimizle kaliteli hizmet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
+                                <div>
+                                    <h5 class="fw-bold">Modern Teknolojiler</h5>
+                                    <p>En güncel teknolojilerle geliştirme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
+                                <div>
+                                    <h5 class="fw-bold">7/24 Destek</h5>
+                                    <p>Her an yanınızda teknik destek</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-3">
+                                <i class="fas fa-check-circle text-primary me-2 fs-5 pt-1"></i>
+                                <div>
+                                    <h5 class="fw-bold">Uygun Fiyat</h5>
+                                    <p>Rekabetçi ve erişilebilir fiyatlar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{% url 'about' %}" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-6 fw-bold">Hizmetlerimiz</h2>
+                <p class="text-muted">İşinizi büyütmeniz için sunduğumuz çözümler</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-laptop-code text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Web Tasarım</h4>
+                            <p>Modern, kullanıcı dostu ve responsive web tasarımları ile markanızı dijitalde en iyi şekilde temsil ediyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-mobile-alt text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Mobil Uygulama</h4>
+                            <p>iOS ve Android platformları için yüksek performanslı ve kullanıcı odaklı mobil uygulamalar geliştiriyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-search text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">SEO Optimizasyonu</h4>
+                            <p>Arama motorlarında üst sıralarda yer almanız için kapsamlı ve etkili SEO çalışmaları yapıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="{% url 'services' %}" class="btn btn-primary rounded-pill px-4 py-2">Tüm Hizmetleri Gör</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-6 fw-bold">Portfolyo</h2>
+                <p class="text-muted">Başarıyla tamamladığımız projelerden bazıları</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card overflow-hidden shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">E-Ticaret Sitesi</h5>
+                            <p class="card-text text-muted">Web Tasarım, E-Ticaret</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card overflow-hidden shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mobil Bankacılık Uygulaması</h5>
+                            <p class="card-text text-muted">Mobil Uygulama, Finans</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card overflow-hidden shadow-sm border-0">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kurumsal Kimlik Tasarımı</h5>
+                            <p class="card-text text-muted">Grafik Tasarım, Markalaşma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="{% url 'portfolio' %}" class="btn btn-primary rounded-pill px-4 py-2">Tüm Projeleri Gör</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta py-5 bg-primary text-white">
+        <div class="container text-center" data-aos="zoom-in">
+            <h3 class="display-6 fw-bold">Projeleriniz İçin Bize Ulaşın</h3>
+            <p class="mb-4">Hayalinizdeki projeyi gerçeğe dönüştürmek için profesyonel ekibimiz yanınızda.</p>
+            <a href="{% url 'contact' %}" class="btn btn-light rounded-pill px-4 py-2">İletişime Geçin</a>
+        </div>
+    </section>
+{% endblock %} 

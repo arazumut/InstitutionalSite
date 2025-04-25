@@ -1,0 +1,304 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">Hizmetlerimiz</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Hizmetlerimiz</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-page py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5" data-aos="fade-right">
+                    <div class="section-title">
+                        <h2 class="fw-bold">Neler Sunuyoruz</h2>
+                        <p>Müşterilerimize dijital dünyada başarılı olmaları için sunduğumuz hizmetler</p>
+                    </div>
+                    <p class="lead">
+                        Kurumsal Site olarak işletmenizin dijital dönüşümünde yanınızdayız. Modern teknolojilerle tasarlanan çözümlerimizle işinizi bir adım öne taşıyoruz.
+                    </p>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-check-circle text-primary me-3 fs-3"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">Profesyonel Hizmet</h5>
+                            <p class="mb-0">Alanında uzman ekibimizle kaliteli hizmet sunuyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-check-circle text-primary me-3 fs-3"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">Uygun Fiyatlar</h5>
+                            <p class="mb-0">Bütçenize uygun çözümlerle işinizi büyütüyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-check-circle text-primary me-3 fs-3"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1">7/24 Destek</h5>
+                            <p class="mb-0">Teknik ekibimiz her zaman yanınızda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded shadow" alt="Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Card Section -->
+    <section class="services-card py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-laptop-code text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Web Tasarım ve Geliştirme</h4>
+                            <p>Modern, kullanıcı dostu ve responsive web tasarımları ile markanızı dijitalde en iyi şekilde temsil ediyoruz. HTML5, CSS3, JavaScript, Bootstrap ve diğer modern teknolojileri kullanarak SEO uyumlu web siteleri geliştiriyoruz.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Kurumsal Web Siteleri</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> E-Ticaret Platformları</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Landing Page Tasarımları</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Web Yönetim Sistemleri</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-mobile-alt text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Mobil Uygulama Geliştirme</h4>
+                            <p>iOS ve Android platformları için yüksek performanslı ve kullanıcı odaklı mobil uygulamalar geliştiriyoruz. Native ve cross-platform çözümlerle işletmenizin mobil dünyada yer almasını sağlıyoruz.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> iOS Uygulamaları</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Android Uygulamaları</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Hibrit Uygulamalar</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Uygulama Bakımı ve Güncelleme</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-search text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">SEO ve Dijital Pazarlama</h4>
+                            <p>Arama motorlarında üst sıralarda yer almanız için kapsamlı ve etkili SEO çalışmaları yapıyoruz. Google Ads, sosyal medya reklamları ve içerik pazarlama stratejileri ile markanızın bilinirliğini artırıyoruz.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> SEO Optimizasyonu</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Google Ads Yönetimi</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Sosyal Medya Pazarlaması</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> İçerik Stratejisi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-paint-brush text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Grafik Tasarım ve Marka Kimliği</h4>
+                            <p>Markanızın görsel kimliğini oluşturarak, rakiplerinizden ayrışmanızı sağlıyoruz. Logo tasarımı, kurumsal kimlik tasarımı, ambalaj tasarımı ve daha fazlasıyla markanızı öne çıkarıyoruz.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Logo Tasarımı</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Kurumsal Kimlik Tasarımı</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Broşür ve Katalog Tasarımı</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Ambalaj Tasarımı</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-server text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Web Hosting ve Bakım Hizmetleri</h4>
+                            <p>Web sitenizin hızlı, güvenli ve kesintisiz çalışması için hosting ve bakım hizmetleri sunuyoruz. Periyodik yedeklemeler, güvenlik güncellemeleri ve teknik destek ile sitenizin her zaman çalışır durumda olmasını sağlıyoruz.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Web Hosting</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Domain Yönetimi</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Güvenlik Hizmetleri</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Periyodik Bakım</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-bullhorn text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Sosyal Medya Yönetimi</h4>
+                            <p>Markanızın sosyal medyada etkili bir şekilde yer almasını sağlıyoruz. İçerik üretimi, topluluk yönetimi, sosyal medya reklamları ve analiz raporları ile sosyal medya varlığınızı güçlendiriyoruz.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> İçerik Üretimi</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Topluluk Yönetimi</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Reklam Yönetimi</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Performans Analizi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="display-6 fw-bold">Çalışma Sürecimiz</h2>
+                <p class="text-muted">Projelerinizi nasıl hayata geçirdiğimizi keşfedin</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-box">
+                        <div class="process-icon mb-3">
+                            <i class="fas fa-comments text-primary fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">1. Keşif</h4>
+                        <p>İhtiyaçlarınızı ve hedeflerinizi anlamak için sizinle detaylı bir toplantı yapıyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-box">
+                        <div class="process-icon mb-3">
+                            <i class="fas fa-drafting-compass text-primary fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">2. Planlama</h4>
+                        <p>Toplanan bilgiler doğrultusunda projenizin stratejisini ve planını oluşturuyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-box">
+                        <div class="process-icon mb-3">
+                            <i class="fas fa-code text-primary fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">3. Geliştirme</h4>
+                        <p>Tasarım ve geliştirme sürecini başlatıyor, düzenli olarak sizi bilgilendiriyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-box">
+                        <div class="process-icon mb-3">
+                            <i class="fas fa-rocket text-primary fs-1"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">4. Lansman</h4>
+                        <p>Projenizi titizlikle test edip onayınızı aldıktan sonra yayına alıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="display-6 fw-bold">Fiyatlandırma</h2>
+                <p class="text-muted">İhtiyacınıza uygun çözümler için fiyatlandırma paketlerimiz</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card pricing-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold mb-3">Başlangıç Paketi</h4>
+                            <div class="price mb-3">
+                                <h2 class="fw-bold">₺4,999</h2>
+                                <p class="text-muted mb-0">Tek Seferlik</p>
+                            </div>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Responsive Web Tasarımı</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 5 Sayfa İçerik</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> İletişim Formu</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Temel SEO Optimizasyonu</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 1 Yıl Hosting & Domain</li>
+                                <li class="mb-3 text-muted"><i class="fas fa-times text-muted me-2"></i> E-ticaret Özellikleri</li>
+                                <li class="mb-3 text-muted"><i class="fas fa-times text-muted me-2"></i> Özel CMS</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn btn-outline-primary rounded-pill px-4 py-2 mt-3">Teklif Al</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card pricing-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <span class="position-absolute top-0 start-50 translate-middle badge bg-primary px-3 py-2 rounded-pill">Popüler</span>
+                            <h4 class="fw-bold mb-3">Kurumsal Paket</h4>
+                            <div class="price mb-3">
+                                <h2 class="fw-bold">₺9,999</h2>
+                                <p class="text-muted mb-0">Tek Seferlik</p>
+                            </div>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Özel Tasarım</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Sınırsız Sayfa</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> İletişim Formu</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Gelişmiş SEO Optimizasyonu</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 2 Yıl Hosting & Domain</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Blog Sistemi</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Özel CMS</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Teklif Al</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card pricing-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold mb-3">E-Ticaret Paketi</h4>
+                            <div class="price mb-3">
+                                <h2 class="fw-bold">₺19,999</h2>
+                                <p class="text-muted mb-0">Tek Seferlik</p>
+                            </div>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Özel E-Ticaret Tasarımı</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Sınırsız Ürün</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Ödeme Sistemleri Entegrasyonu</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Gelişmiş SEO Optimizasyonu</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> 3 Yıl Hosting & Domain</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Stok Yönetimi</li>
+                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Kargo Entegrasyonu</li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn btn-outline-primary rounded-pill px-4 py-2 mt-3">Teklif Al</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta py-5 bg-primary text-white">
+        <div class="container text-center" data-aos="zoom-in">
+            <h3 class="display-6 fw-bold">Özel Çözüm mü Arıyorsunuz?</h3>
+            <p class="mb-4">İhtiyaçlarınıza özel çözümler için bizimle iletişime geçin.</p>
+            <a href="{% url 'contact' %}" class="btn btn-light rounded-pill px-4 py-2">İletişime Geçin</a>
+        </div>
+    </section>
+{% endblock %} 

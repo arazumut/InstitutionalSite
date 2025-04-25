@@ -1,0 +1,268 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">Blog</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-page py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <!-- Blog Post 1 -->
+                    <div class="card blog-card mb-4 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Blog Post">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <div class="mb-auto">
+                                        <div class="blog-meta mb-2">
+                                            <small class="text-muted me-3"><i class="far fa-calendar-alt me-1"></i> 15 Haziran 2023</small>
+                                            <small class="text-muted"><i class="far fa-user me-1"></i> Ahmet Yılmaz</small>
+                                        </div>
+                                        <h4 class="card-title fw-bold mb-3">Web Tasarımda En Son Trendler</h4>
+                                        <p class="card-text">2023 yılında web tasarım dünyasında öne çıkan trendleri ve bu trendlerin nasıl etkili bir şekilde uygulanabileceğini öğrenin.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 2 -->
+                    <div class="card blog-card mb-4 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Blog Post">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <div class="mb-auto">
+                                        <div class="blog-meta mb-2">
+                                            <small class="text-muted me-3"><i class="far fa-calendar-alt me-1"></i> 28 Mayıs 2023</small>
+                                            <small class="text-muted"><i class="far fa-user me-1"></i> Zeynep Kaya</small>
+                                        </div>
+                                        <h4 class="card-title fw-bold mb-3">Dijital Pazarlamada Başarının Sırları</h4>
+                                        <p class="card-text">Dijital pazarlama stratejilerinizi geliştirmek ve online varlığınızı güçlendirmek için izlemeniz gereken adımları keşfedin.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 3 -->
+                    <div class="card blog-card mb-4 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Blog Post">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <div class="mb-auto">
+                                        <div class="blog-meta mb-2">
+                                            <small class="text-muted me-3"><i class="far fa-calendar-alt me-1"></i> 10 Nisan 2023</small>
+                                            <small class="text-muted"><i class="far fa-user me-1"></i> Mehmet Can</small>
+                                        </div>
+                                        <h4 class="card-title fw-bold mb-3">Mobil Uygulama Geliştirme Süreçleri</h4>
+                                        <p class="card-text">Başarılı bir mobil uygulama geliştirme sürecinin aşamaları ve dikkat edilmesi gereken önemli noktalar hakkında bilgi edinin.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 4 -->
+                    <div class="card blog-card mb-4 border-0 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div class="overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Blog Post">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <div class="mb-auto">
+                                        <div class="blog-meta mb-2">
+                                            <small class="text-muted me-3"><i class="far fa-calendar-alt me-1"></i> 22 Mart 2023</small>
+                                            <small class="text-muted"><i class="far fa-user me-1"></i> Ayşe Demir</small>
+                                        </div>
+                                        <h4 class="card-title fw-bold mb-3">E-Ticaret Sitenizi Optimize Etmenin Yolları</h4>
+                                        <p class="card-text">E-ticaret sitenizin performansını artırmak ve dönüşüm oranlarını yükseltmek için uygulamanız gereken stratejileri öğrenin.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Önceki</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Sonraki</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Search Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Arama</h5>
+                            <form action="" method="get">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Arama..." aria-label="Arama">
+                                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Kategoriler</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Web Tasarım</span>
+                                        <span class="badge bg-primary rounded-pill">14</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Mobil Uygulama</span>
+                                        <span class="badge bg-primary rounded-pill">8</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>E-Ticaret</span>
+                                        <span class="badge bg-primary rounded-pill">11</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 pb-2 border-bottom">
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Dijital Pazarlama</span>
+                                        <span class="badge bg-primary rounded-pill">9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between text-decoration-none">
+                                        <span>Grafik Tasarım</span>
+                                        <span class="badge bg-primary rounded-pill">6</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Posts Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Son Yazılar</h5>
+                            <div class="recent-post">
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="rounded" width="60" height="60" alt="Recent Post">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="fw-bold mb-1"><a href="#" class="text-decoration-none">Web Tasarımda En Son Trendler</a></h6>
+                                        <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> 15 Haziran 2023</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="rounded" width="60" height="60" alt="Recent Post">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="fw-bold mb-1"><a href="#" class="text-decoration-none">Dijital Pazarlamada Başarının Sırları</a></h6>
+                                        <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> 28 Mayıs 2023</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="rounded" width="60" height="60" alt="Recent Post">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="fw-bold mb-1"><a href="#" class="text-decoration-none">Mobil Uygulama Geliştirme Süreçleri</a></h6>
+                                        <small class="text-muted"><i class="far fa-calendar-alt me-1"></i> 10 Nisan 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags Widget -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Etiketler</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Web Tasarım</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Responsive</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">E-Ticaret</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">SEO</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Mobil</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">UX/UI</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Bootstrap</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">WordPress</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Django</a>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">React</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="fw-bold mb-3">Bültenimize Abone Olun</h3>
+                    <p class="mb-4">En son bloglarımız ve güncellemelerimizden haberdar olmak için e-posta listemize kaydolun.</p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email adresiniz" aria-label="Email address">
+                            <button class="btn btn-primary" type="button">Abone Ol</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %} 

@@ -1,0 +1,420 @@
+/*--------------------------------------------------------------
+# General Styles
+--------------------------------------------------------------*/
+:root {
+  --primary-color: #0d6efd;
+  --primary-color-hover: #0b5ed7;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --success-color: #198754;
+  --info-color: #0dcaf0;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: var(--primary-color);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  z-index: 996;
+}
+
+.back-to-top i {
+  font-size: 16px;
+}
+
+.back-to-top:hover {
+  background: var(--primary-color-hover);
+  color: #fff;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.navbar {
+  padding: 15px 0;
+  transition: all 0.3s;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px !important;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero h1 {
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+#hero h2 {
+  color: var(--secondary-color);
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+#hero .hero-img {
+  text-align: right;
+}
+
+#hero .hero-img img {
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--dark-color);
+}
+
+.about .content i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .icon-box {
+  margin-bottom: 20px;
+}
+
+.services .icon-box i {
+  color: var(--primary-color);
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.services .card:hover .icon-box i {
+  color: var(--primary-color-hover);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio-item {
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-item img {
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.team-card .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--light-color);
+  color: var(--dark-color);
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-card .social-links a:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact .info-box:hover {
+  transform: translateY(-10px);
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: var(--primary-color);
+  border-radius: 50%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+.blog-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+.blog-card .card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+  padding: 80px 0 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.page-header h1 {
+  margin-bottom: 15px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--secondary-color);
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  #hero {
+    height: auto;
+    padding: 100px 0 60px 0;
+  }
+  
+  #hero .hero-img {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #hero h1 {
+    font-size: 32px;
+  }
+  
+  #hero h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    text-align: center;
+  }
+  
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 28px;
+  }
+  
+  .section-title h2 {
+    font-size: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 

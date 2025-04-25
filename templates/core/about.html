@@ -1,0 +1,174 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold">Hakkımızda</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Hakkımızda</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-page py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded shadow" alt="About Us">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="fw-bold mb-4">Biz Kimiz</h2>
+                    <p class="lead mb-4">2013 yılında kurulan Kurumsal Site, dijital çözümler alanında Türkiye'nin önde gelen şirketlerinden biridir.</p>
+                    <p class="mb-4">Kurumsal Site olarak, müşterilerimize web tasarım, mobil uygulama geliştirme, dijital pazarlama ve kurumsal kimlik tasarımı alanlarında yenilikçi çözümler sunuyoruz. 10 yılı aşkın tecrübemiz ve alanında uzman ekibimizle, müşterilerimizin dijital dönüşüm süreçlerinde yanlarında olmaktan gurur duyuyoruz.</p>
+                    <p>Misyonumuz, her müşterimize özel, ihtiyaçlarına uygun ve rekabette öne çıkaran dijital çözümler üretmektir. Vizyonumuz ise, dijital dönüşüm alanında Türkiye'nin lider şirketi olmak ve global pazarda söz sahibi olmaktır.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="display-6 fw-bold">Neden Bizi Seçmelisiniz</h2>
+                <p class="text-muted">Fark yaratan özelliklerimiz</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-rocket text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Hızlı Teslimat</h4>
+                            <p>Projelerinizi söz verdiğimiz süre içerisinde, kaliteden ödün vermeden teslim ediyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-users text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Uzman Ekip</h4>
+                            <p>Alanında uzman ve deneyimli ekibimizle en kaliteli hizmeti sunuyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-headset text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">7/24 Destek</h4>
+                            <p>Teknik destek ekibimiz her an yanınızda olup sorunlarınıza hızlı çözümler üretiyor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-star text-primary fs-1"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Kaliteli Hizmet</h4>
+                            <p>Her projemizde en yüksek kalite standartlarında hizmet sunmayı taahhüt ediyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="display-6 fw-bold">Ekibimiz</h2>
+                <p class="text-muted">Profesyonel ve deneyimli çalışanlarımız</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card team-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Ahmet Yılmaz</h5>
+                            <p class="text-muted mb-3">Kurucu & CEO</p>
+                            <p class="card-text">15 yıllık sektör deneyimi ile şirketimizin kurucusu ve yöneticisi.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card team-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Ayşe Demir</h5>
+                            <p class="text-muted mb-3">Kreatif Direktör</p>
+                            <p class="card-text">Yaratıcı fikirler ve inovatif tasarımlar ile projelerinize değer katar.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card team-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Mehmet Can</h5>
+                            <p class="text-muted mb-3">Yazılım Mühendisi</p>
+                            <p class="card-text">En güncel teknolojilerle yüksek performanslı uygulamalar geliştirir.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card team-card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-1">Zeynep Kaya</h5>
+                            <p class="text-muted mb-3">Dijital Pazarlama Uzmanı</p>
+                            <p class="card-text">Stratejik pazarlama planları ile markanızın dijitalde büyümesini sağlar.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta py-5 bg-primary text-white">
+        <div class="container text-center" data-aos="zoom-in">
+            <h3 class="display-6 fw-bold">Projeleriniz İçin Bize Ulaşın</h3>
+            <p class="mb-4">Ekibimiz sizin için en iyi çözümleri üretmeye hazır.</p>
+            <a href="{% url 'contact' %}" class="btn btn-light rounded-pill px-4 py-2">İletişime Geçin</a>
+        </div>
+    </section>
+{% endblock %} 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ title }}{% endblock %} | Kurumsal Site</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <span class="fw-bold text-primary">KURUMSAL</span><span class="fw-light">SITE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'home' %}">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'hakkimizda' in request.path %}active{% endif %}" href="{% url 'about' %}">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'hizmetlerimiz' in request.path %}active{% endif %}" href="{% url 'services' %}">Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'portfolyo' in request.path %}active{% endif %}" href="{% url 'portfolio' %}">Portfolyo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'blog' in request.path %}active{% endif %}" href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'iletisim' in request.path %}active{% endif %}" href="{% url 'contact' %}">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="mb-4">Hakkımızda</h4>
+                    <p>Kurumsal Site olarak 10 yılı aşkın süredir müşterilerimize en kaliteli hizmeti sunuyoruz. Amacımız, her projeye özgün ve yaratıcı çözümler üretmektir.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="mb-4">Hızlı Linkler</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="{% url 'home' %}" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Ana Sayfa</a></li>
+                        <li class="mb-2"><a href="{% url 'about' %}" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Hakkımızda</a></li>
+                        <li class="mb-2"><a href="{% url 'services' %}" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Hizmetlerimiz</a></li>
+                        <li class="mb-2"><a href="{% url 'portfolio' %}" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Portfolyo</a></li>
+                        <li class="mb-2"><a href="{% url 'blog' %}" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>Blog</a></li>
+                        <li class="mb-2"><a href="{% url 'contact' %}" class="text-white text-decoration-none"><i class="fas fa-angle-right me-2"></i>İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="mb-4">İletişim Bilgileri</h4>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Barbaros Bulvarı No:123, Beşiktaş, İstanbul</p>
+                    <p><i class="fas fa-phone me-2"></i> +90 212 345 67 89</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@kurumsalsite.com</p>
+                    <p><i class="fas fa-clock me-2"></i> Pazartesi - Cuma: 09:00 - 18:00</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">&copy; 2023 Kurumsal Site. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Web Tasarım & Geliştirme by <a href="#" class="text-white">Kurumsal Site</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS - Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html> 
